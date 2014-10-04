@@ -1,6 +1,6 @@
 web:
   build: .
-  command: python app.py
+  command: python run.py
   ports:
    - "5000:5000"
   volumes:
@@ -9,3 +9,5 @@ web:
    - redis
 redis:
   image: redis
+mongodb:
+  image: mongodb
