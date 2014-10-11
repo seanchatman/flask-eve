@@ -33,11 +33,11 @@ if os.environ.get('PORT'):
     SERVER_NAME = 'eve-demo.herokuapp.com'
 else:
     # Running on local machine. Let's just use the local mongod instance.
-    MONGO_HOST = 'localhost'
+    MONGO_HOST = '107.170.241.4'
     MONGO_PORT = 27017
     MONGO_USERNAME = 'user'
     MONGO_PASSWORD = 'user'
-    MONGO_DBNAME = 'apitest'
+    MONGO_DBNAME = 'test'
 
     # let's not forget the API entry point (not really needed anyway)
     #SERVER_NAME = '127.0.0.1:5000'
